@@ -1,7 +1,7 @@
-const botSettings = require("./botsettings.json");
+﻿//const botSettings = require("./botsettings.json");
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const prefix = botSettings.prefix;
+var prefix = "s."
 
 //bot console.log
 bot.on("ready", () => {
@@ -9,7 +9,7 @@ bot.on("ready", () => {
         console.log("I'm in - " + bot.guilds.size + " - servers");
     });
 
-bot.on("ready", async () => {
+/*bot.on("ready", async () => {
     console.log(`I have completed booting up, my name is ${bot.user.username}`);
     try {
         let link = await bot.generateInvite(["ADMINISTRATOR"]);
@@ -18,6 +18,10 @@ bot.on("ready", async () => {
         //console.log(e.stack);
         console.log(link);
     }
+});*/
+
+bot.on("ready", () => {
+  console.log(`I have completed booting up, I am ${bot.user.username}`);
 });
 // End of bot console.log
 /*bot.on("message", async message => {
@@ -117,4 +121,4 @@ General Rules
             break;
     }
 });
-bot.login(botSettings.token);
+bot.login("MzMyNjM0ODU0MTc5MDc4MTY1.DEA94A.WfQmJmVlK-OvFiXKUSRholVsuLE");
