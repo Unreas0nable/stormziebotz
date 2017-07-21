@@ -68,6 +68,7 @@ bot.on("message", function(message) {
             break;
         default:
             message.channel.send("Invalid Command, please type `s.help` ..");
+            message.channel.send(`<#332710468508450818> - Please go here if we're missing something..`);
             break;
         case "app":
             message.channel.send(`
